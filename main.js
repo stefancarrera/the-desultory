@@ -29,4 +29,8 @@ function changePanel() {
   if ($panelNum === 6) {
     $panel.classList.add("flicker-1");
   }
+
+  if ($panelNum === 1) {
+    $panel.classList.add("fade-in");
+  }
 }
