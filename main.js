@@ -25,12 +25,23 @@ $prev.addEventListener('click', () => {
 
 function changePanel() {
   $panel.className = "panel";
-  $panel.setAttribute('src', `images/${$panelNum}.png`);
+
   if ($panelNum === 6) {
-    $panel.classList.add("flicker-1");
+    $panel.className = "panel fade-in"
+    $panel.setAttribute('src', `images/${$panelNum}.png`);
+
+    setTimeout(() => {
+      $panel.className = "panel flicker-4"
+    },
+      2000
+    );
+
+    // $panel.classList.add("flicker-1");
+  } else if ($panelNum === 1) {
+    $panel.classList.add("fade-in");
+    $panel.setAttribute('src', `images/${$panelNum}.png`);
+  } else {
+    $panel.setAttribute('src', `images/${$panelNum}.png`);
   }
 
-  if ($panelNum === 1) {
-    $panel.classList.add("fade-in");
-  }
 }
