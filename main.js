@@ -24,5 +24,9 @@ $prev.addEventListener('click', () => {
 });
 
 function changePanel() {
+  $panel.className = "panel";
   $panel.setAttribute('src', `images/${$panelNum}.png`);
+  if ($panelNum === 6) {
+    $panel.classList.add("flicker-1");
+  }
 }
