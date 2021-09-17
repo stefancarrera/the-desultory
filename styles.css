@@ -1,8 +1,12 @@
 body {
   background-color: rgb(46, 47, 48);
+  font-family: 'Barlow Condensed', sans-serif;
 }
 
 button {
+  font-family: 'Barlow Condensed', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   border: 2px solid black;
   background-color: rgb(204, 204, 134);
   width: 50px;
