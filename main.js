@@ -46,10 +46,9 @@ function changePanel() {
     setTimeout(() => {
       $panel.className = "panel flicker-4"
     },
-      1000
+      2000
     );
 
-    // $panel.classList.add("flicker-1");
   } else if ($panelNum === 1) {
     $panel.classList.add("fade-in");
     $panel.setAttribute('src', `images/${$panelNum}.png`);
@@ -60,12 +59,24 @@ function changePanel() {
 }
 
 function text() {
+  $text1.setAttribute('src', '');
+  $text2.setAttribute('src', '');
+
   if ($panelNum === 1) {
     setTimeout(() => {
       $text1.setAttribute('src', `images/text/text1-1.png`)
       $text1.className = 'p1Text1 fade-in';
       $text2.setAttribute('src', 'images/text/text1-2.png')
       $text2.className = 'p1Text2 fade-in';
-    }, 2000);
+    }, 1000);
+  }
+
+  if ($panelNum === 2) {
+    setTimeout(() => {
+      $text1.setAttribute('src', `images/text/text2-1.png`)
+      $text1.className = 'p1Text1 fade-in';
+      $text2.setAttribute('src', 'images/text/text2-2.png')
+      $text2.className = 'p1Text2 fade-in';
+    }, 1000);
   }
 }
