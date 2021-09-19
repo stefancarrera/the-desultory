@@ -57,6 +57,20 @@ button:hover {
   left: 5%;
 }
 
+.p1Text1 {
+  position: absolute;
+  top: -300%;
+  left: 10%;
+  width: 80%;
+}
+
+.p1Text2 {
+  position: absolute;
+  top: 1800%;
+  left: 30%;
+  width: 80%;
+}
+
 .flicker-4 {
 	-webkit-animation: flicker-4 4s linear infinite both;
 	        animation: flicker-4 4s linear infinite both;
