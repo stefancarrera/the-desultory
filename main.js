@@ -65,18 +65,22 @@ function text() {
   if ($panelNum === 1) {
     setTimeout(() => {
       $text1.setAttribute('src', `images/text/text1-1.png`)
-      $text1.className = 'p1Text1 fade-in';
+      $text1.className = 'p1Text1 focus-in-expand-fwd';
+    }, 2000);
+    setTimeout(() => {
       $text2.setAttribute('src', 'images/text/text1-2.png')
-      $text2.className = 'p1Text2 fade-in';
-    }, 1000);
+      $text2.className = 'p1Text2 focus-in-expand-fwd';
+    }, 3000)
   }
 
   if ($panelNum === 2) {
     setTimeout(() => {
       $text1.setAttribute('src', `images/text/text2-1.png`)
-      $text1.className = 'p1Text1 fade-in';
+      $text1.className = 'p1Text1 focus-in-expand-fwd';
+    }, 2000);
+    setTimeout(() => {
       $text2.setAttribute('src', 'images/text/text2-2.png')
-      $text2.className = 'p1Text2 fade-in';
-    }, 1000);
+      $text2.className = 'p1Text2 focus-in-expand-fwd';
+    }, 3000)
   }
 }
