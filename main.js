@@ -3,7 +3,10 @@ const $prev = document.getElementById('prev');
 const $panel = document.getElementById('panel');
 const $text1 = document.getElementById('text1');
 const $text2 = document.getElementById('text2');
-const $navRow = document.getElementById('navRow');
+const $divText1 = document.getElementById('divText1');
+const $divText2 = document.getElementById('divText2');
+// const $navRow = document.getElementById('navRow');
+
 
 let $panelNum = 1;
 
@@ -61,41 +64,53 @@ function changePanel() {
 function text() {
   $text1.setAttribute('src', '');
   $text2.setAttribute('src', '');
+  $divText1.textContent = '';
+  $divText2.textContent = '';
 
-  if ($panelNum === 1) {
-    setTimeout(() => {
-      $text1.setAttribute('src', `images/text/text1-1.png`)
-      $text1.className = 'p1Text1 focus-in';
-    }, 2000);
-    setTimeout(() => {
-      $text2.setAttribute('src', 'images/text/text1-2.png')
-      $text2.className = 'p1Text2 focus-in';
-    }, 3000);
-  }
+  setTimeout(() => {
+    if ($panelNum === 1) {
+      setTimeout(() => {
+        $text1.setAttribute('src', `images/text/text1-1.png`)
+        $text1.className = 'p1Text1 focus-in';
+      }, 2000);
+      setTimeout(() => {
+        $text2.setAttribute('src', 'images/text/text1-2.png')
+        $text2.className = 'p1Text2 focus-in';
+      }, 3000);
+    }
 
-  if ($panelNum === 2) {
-    setTimeout(() => {
-      $text1.setAttribute('src', `images/text/text2-1.png`)
-      $text1.className = 'p1Text1 focus-in';
-    }, 2000);
-    setTimeout(() => {
-      $text2.setAttribute('src', 'images/text/text2-2.png')
-      $text2.className = 'p1Text2 focus-in';
-    }, 3000);
-  }
+    if ($panelNum === 2) {
+      setTimeout(() => {
+        $text1.setAttribute('src', `images/text/text2-1.png`)
+        $text1.className = 'p1Text1 focus-in';
+      }, 2000);
+      setTimeout(() => {
+        $text2.setAttribute('src', 'images/text/text2-2.png')
+        $text2.className = 'p1Text2 focus-in';
+      }, 3000);
+    }
 
-  if ($panelNum === 3) {
-    setTimeout(() => {
-      const divText1 = document.createElement('div');
-      divText1.className = 'p3Text1 focus-in';
-      divText1.textContent = 'Evolving';
-      $navRow.appendChild(divText1);
-    }, 2000);
-    setTimeout(() => {
-      const divText2 = document.createElement('div');
-      divText2.className = 'p3Text2 focus-in';
-      divText2.textContent = `It yearns for what it doesn't have. An innate drive to improve, to become better, stronger. Its ancestor's struggle has brought it here. To this moment.`
-      $navRow.appendChild(divText2);
-    }, 3000);
-  }
+    if ($panelNum === 3) {
+      setTimeout(() => {
+        $divText1.className = 'p3Text1 fade-in';
+        $divText1.textContent = 'Evolving';
+      }, 2000);
+      setTimeout(() => {
+        $divText2.className = 'p3Text2 fade-in';
+        $divText2.textContent = `It yearns for what it doesn't have. An innate drive to improve, to become better, stronger. Its ancestor's struggle has brought it here. To this moment.`
+      }, 3000);
+    }
+
+    if ($panelNum === 4) {
+      setTimeout(() => {
+        $divText1.className = 'p4Text1 fade-in';
+        $divText1.textContent = 'It looks to the beyond and wonders what is out there.'
+      }, 2000);
+      setTimeout(() => {
+        $divText2.className = 'p4Text2 fade-in';
+        $divText2.textContent = 'Does it dare to dream?'
+      }, 3000);
+    }
+
+  }, 2000);
 }
