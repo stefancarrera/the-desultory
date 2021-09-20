@@ -71,6 +71,27 @@ button:hover {
   width: 80%;
 }
 
+.p3Text1 {
+  position: absolute;
+  top: 25px;
+  left: 25%;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
+
+.p3Text2 {
+  position: absolute;
+  top: 515px;
+  left: 18%;
+  font-size: 35px;
+  color: white;
+  width: 450px;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+}
+
 .flicker {
 	-webkit-animation: flicker 4s linear infinite both;
 	        animation: flicker 4s linear infinite both;
