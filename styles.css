@@ -71,9 +71,30 @@ button:hover {
   width: 80%;
 }
 
-.flicker-4 {
-	-webkit-animation: flicker-4 4s linear infinite both;
-	        animation: flicker-4 4s linear infinite both;
+.p3Text1 {
+  position: absolute;
+  top: 25px;
+  left: 25%;
+  font-size: 40px;
+  color: white;
+  text-align: center;
+  -webkit-text-stroke: 1px black;
+}
+
+.p3Text2 {
+  position: absolute;
+  top: 515px;
+  left: 18%;
+  font-size: 35px;
+  color: white;
+  width: 450px;
+  -webkit-text-stroke: 1px black;
+  text-align: center;
+}
+
+.flicker {
+	-webkit-animation: flicker 4s linear infinite both;
+	        animation: flicker 4s linear infinite both;
 }
 
 .fade-in {
@@ -81,9 +102,9 @@ button:hover {
 	        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
 }
 
-.focus-in-expand-fwd {
-	-webkit-animation: focus-in-expand-fwd 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-	        animation: focus-in-expand-fwd 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+.focus-in {
+	-webkit-animation: focus-in 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+	        animation: focus-in 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 }
 
 
@@ -104,7 +125,7 @@ button:hover {
   }
 }
 
-@-webkit-keyframes flicker-4 {
+@-webkit-keyframes flicker {
   0%,
   100% {
     opacity: 1;
@@ -182,7 +203,7 @@ button:hover {
     opacity: 1;
   }
 }
-@keyframes flicker-4 {
+@keyframes flicker {
   0%,
   100% {
     opacity: 1;
@@ -261,7 +282,7 @@ button:hover {
   }
 }
 
-@-webkit-keyframes focus-in-expand-fwd {
+@-webkit-keyframes focus-in {
   0% {
     letter-spacing: -0.5em;
     -webkit-transform: translateZ(-800px);
@@ -278,7 +299,7 @@ button:hover {
     opacity: 1;
   }
 }
-@keyframes focus-in-expand-fwd {
+@keyframes focus-in {
   0% {
     letter-spacing: -0.5em;
     -webkit-transform: translateZ(-800px);
@@ -296,7 +317,7 @@ button:hover {
   }
 }
 
-@-webkit-keyframes focus-in-expand-fwd {
+@-webkit-keyframes focus-in {
   0% {
     letter-spacing: -0.5em;
     -webkit-transform: translateZ(-800px);
@@ -313,7 +334,7 @@ button:hover {
     opacity: 1;
   }
 }
-@keyframes focus-in-expand-fwd {
+@keyframes focus-in {
   0% {
     letter-spacing: -0.5em;
     -webkit-transform: translateZ(-800px);
