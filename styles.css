@@ -76,6 +76,18 @@ button:hover {
   width: 200px;
 }
 
+.p2Text1 {
+  position: absolute;
+  top: 216%;
+  left: 21%;
+}
+
+.p2Text2 {
+  position: absolute;
+  top: 2717%;
+  left: 65%;
+}
+
 .p3Text1 {
   position: absolute;
   top: 25px;
