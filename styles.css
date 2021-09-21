@@ -57,26 +57,41 @@ button:hover {
   left: 5%;
 }
 
+.textDiv {
+  color: white;
+  font-size: 35px;
+}
+
 .p1Text1 {
   position: absolute;
-  top: -300%;
-  left: 10%;
-  width: 80%;
+  top: 27%;
+  left: 16%;
+  width: 400px;
 }
 
 .p1Text2 {
   position: absolute;
-  top: 1800%;
-  left: 30%;
-  width: 80%;
+  top: 2106%;
+  left: 58%;
+  width: 200px;
+}
+
+.p2Text1 {
+  position: absolute;
+  top: 216%;
+  left: 21%;
+}
+
+.p2Text2 {
+  position: absolute;
+  top: 2717%;
+  left: 65%;
 }
 
 .p3Text1 {
   position: absolute;
   top: 25px;
   left: 25%;
-  font-size: 40px;
-  color: white;
   text-align: center;
 }
 
@@ -84,9 +99,6 @@ button:hover {
   position: absolute;
   top: 515px;
   left: 18%;
-  font-size: 35px;
-  color: white;
-  width: 450px;
   text-align: center;
 }
 
@@ -94,9 +106,6 @@ button:hover {
   position: absolute;
   top: 25px;
   left: 18%;
-  font-size: 35px;
-  color: white;
-  width: 450px;
   text-align: center;
 }
 
@@ -104,9 +113,6 @@ button:hover {
   position: absolute;
   top: 614px;
   left: 18%;
-  font-size: 35px;
-  color: white;
-  width: 450px;
   text-align: center;
 }
 
