@@ -90,15 +90,16 @@ button:hover {
 
 .p3Text1 {
   position: absolute;
-  top: 25px;
-  left: 25%;
+  top: 211%;
+  left: 41%;
   text-align: center;
 }
 
 .p3Text2 {
   position: absolute;
-  top: 515px;
-  left: 18%;
+  top: 3026%;
+  left: 20%;
+  width: 420px;
   text-align: center;
 }
 
