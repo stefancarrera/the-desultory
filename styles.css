@@ -105,15 +105,16 @@ button:hover {
 
 .p4Text1 {
   position: absolute;
-  top: 25px;
+  top: 130%;
   left: 18%;
   text-align: center;
+  width: 450px;
 }
 
 .p4Text2 {
   position: absolute;
-  top: 614px;
-  left: 18%;
+  top: 3817%;
+  left: 32%;
   text-align: center;
 }
 

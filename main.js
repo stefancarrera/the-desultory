@@ -113,12 +113,16 @@ function text() {
 
     if ($panelNum === 4) {
       setTimeout(() => {
-        $divText1.className = 'p4Text1 fade-in';
-        $divText1.textContent = 'It looks to the beyond and wonders what is out there.'
+        const $text1 = document.createElement('div');
+        $text1.className = 'p4Text1 fade-in';
+        $text1.textContent = 'It looks to the beyond and wonders, what is out there.'
+        $textDiv.appendChild($text1);
       }, 2000);
       setTimeout(() => {
-        $divText2.className = 'p4Text2 fade-in';
-        $divText2.textContent = 'Does it dare to dream?'
+        const $text2 = document.createElement('div');
+        $text2.className = 'p4Text2 fade-in';
+        $text2.textContent = 'Does it dare to dream?'
+        $textDiv.appendChild($text2);
       }, 3000);
     }
 
