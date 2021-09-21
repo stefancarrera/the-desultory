@@ -143,4 +143,19 @@ function text() {
         $textDiv.appendChild($img2);
       }, 2100);
     }
+
+    if ($panelNum === 7) {
+      setTimeout(() => {
+        const $img1 = document.createElement('img');
+        $img1.setAttribute('src', 'images/text/skull-bubble.png');
+        $img1.className = 'p7Img1 fade-in';
+        $textDiv.appendChild($img1);
+      }, 2000);
+      setTimeout(() => {
+        const $text1 = document.createElement('div');
+        $text1.className = 'p7Text1 fade-in';
+        $text1.textContent = 'Not this time.';
+        $textDiv.appendChild($text1);
+      }, 2100);
+    }
 }
