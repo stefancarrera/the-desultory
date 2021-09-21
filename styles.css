@@ -140,6 +140,23 @@ button:hover {
   left: 12%;
 }
 
+.p7Img1 {
+  position: absolute;
+  width: 334px;
+  top: 467%;
+  left: 41%;
+}
+
+.p7Text1 {
+  position: absolute;
+  top: 929%;
+  left: 54%;
+  color: black;
+  width: 100px;
+  text-align: center;
+  transform: rotate(-16deg);
+}
+
 .flicker {
 	-webkit-animation: flicker 4s linear infinite both;
 	        animation: flicker 4s linear infinite both;
