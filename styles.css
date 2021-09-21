@@ -126,6 +126,20 @@ button:hover {
   width: 450px;
 }
 
+.p6Img1 {
+  position: absolute;
+  width: 502px;
+  top: -198%;
+  left: 14%;
+}
+
+.p6Img2 {
+  position: absolute;
+  width: 550px;
+  top: 618%;
+  left: 12%;
+}
+
 .flicker {
 	-webkit-animation: flicker 4s linear infinite both;
 	        animation: flicker 4s linear infinite both;

@@ -93,7 +93,7 @@ function text() {
       setTimeout(() => {
         const $text1 = document.createElement('div');
         $text1.className = 'p3Text1 fade-in';
-        $text1.textContent = 'Evolving';
+        $text1.textContent = 'Evolves';
         $textDiv.appendChild($text1);
       }, 2000);
       setTimeout(() => {
@@ -127,5 +127,20 @@ function text() {
         $text1.textContent = 'Breaking forth from its watery prison, going further than any before it. Think of the nations and empires it has wrought with this act.';
         $textDiv.appendChild($text1);
       }, 2000);
+    }
+
+    if ($panelNum === 6) {
+      setTimeout(() => {
+        const $img1 = document.createElement('img');
+        $img1.setAttribute('src', 'images/text/text6-strike.png');
+        $img1.className = 'p6Img1';
+        $textDiv.appendChild($img1);
+      }, 2000);
+      setTimeout(() => {
+        const $img2 = document.createElement('img');
+        $img2.setAttribute('src', 'images/text/text6-bam.png');
+        $img2.className = 'p6Img2';
+        $textDiv.appendChild($img2);
+      }, 2100);
     }
 }
