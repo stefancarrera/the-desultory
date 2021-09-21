@@ -118,6 +118,14 @@ button:hover {
   text-align: center;
 }
 
+.p5Text1 {
+  position: absolute;
+  top: 401%;
+  left: 18%;
+  text-align: center;
+  width: 450px;
+}
+
 .flicker {
 	-webkit-animation: flicker 4s linear infinite both;
 	        animation: flicker 4s linear infinite both;

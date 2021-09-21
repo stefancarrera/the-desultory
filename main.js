@@ -1,11 +1,7 @@
 const $next = document.getElementById('next');
 const $prev = document.getElementById('prev');
 const $panel = document.getElementById('panel');
-const $divText1 = document.getElementById('divText1');
-const $divText2 = document.getElementById('divText2');
 const $textDiv = document.getElementById('textDiv');
-// const $navRow = document.getElementById('navRow');
-
 
 let $panelNum = 1;
 
@@ -61,8 +57,6 @@ function changePanel() {
 }
 
 function text() {
-  $divText1.textContent = '';
-  $divText2.textContent = '';
   $textDiv.innerHTML = '';
 
     if ($panelNum === 1) {
@@ -126,4 +120,12 @@ function text() {
       }, 3000);
     }
 
+    if ($panelNum === 5) {
+      setTimeout(() => {
+        const $text1 = document.createElement('div');
+        $text1.className = 'p5Text1 fade-in';
+        $text1.textContent = 'Breaking forth from its watery prison, going further than any before it. Think of the nations and empires it has wrought with this act.';
+        $textDiv.appendChild($text1);
+      }, 2000);
+    }
 }
