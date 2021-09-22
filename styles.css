@@ -17,6 +17,30 @@ button:hover {
   background-color: rgb(235, 235, 211);
 }
 
+.banner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 700px;
+  margin: auto;
+}
+
+.posRel {
+  position: relative;
+}
+
+.title {
+  position: absolute;
+  top: 10%;
+  left: 37%;
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color: white;
+  width: 250px;
+  text-align: center;
+}
+
 .center {
   display: flex;
   flex-direction: column;
@@ -163,13 +187,80 @@ button:hover {
 }
 
 .fade-in {
-	-webkit-animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
-	        animation: fade-in 4s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;
+	-webkit-animation: fade-in 4s ease-in;
+	        animation: fade-in 4s ease-in;
+}
+
+
+.fade-in-long {
+	-webkit-animation: fade-in 6s ease-in;
+	        animation: fade-in 6s ease-in;
 }
 
 .focus-in {
 	-webkit-animation: focus-in 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
 	        animation: focus-in 0.9s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+}
+
+.tracking-out {
+	-webkit-animation: tracking-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+	        animation: tracking-out 1s cubic-bezier(0.550, 0.085, 0.680, 0.530) both;
+}
+
+.tracking-in {
+	-webkit-animation: tracking-in 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+	        animation: tracking-in 3s cubic-bezier(0.215, 0.610, 0.355, 1.000) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+  40% {
+    opacity: 0.6;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
+@-webkit-keyframes tracking-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+}
+@keyframes tracking-out {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
 }
 
 
@@ -182,6 +273,23 @@ button:hover {
   }
 }
 @keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fade-in-long {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-long {
   0% {
     opacity: 0;
   }

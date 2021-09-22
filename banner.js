@@ -1,0 +1,12 @@
+const $titleText = document.getElementById('title');
+
+window.addEventListener('load', () => {
+  setTimeout(() => {
+    $titleText.textContent = "To";
+    $titleText.className = "title tracking-out";
+  }, 3000);
+  setTimeout(() => {
+    $titleText.textContent = "The Desultory";
+    $titleText.className = "title tracking-in";
+  }, 6000);
+})
