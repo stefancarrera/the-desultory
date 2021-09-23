@@ -9,4 +9,4 @@ window.addEventListener('load', () => {
     $titleText.textContent = "The Desultory";
     $titleText.className = "title tracking-in";
   }, 6000);
-})
+});
