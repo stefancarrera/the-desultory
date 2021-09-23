@@ -8,10 +8,12 @@ window.addEventListener("load", () => {
   text();
   changePanel();
   $next.disabled = true;
+  $prev.disabled = true;
 });
 
 $next.addEventListener('click', () => {
   $next.disabled = true;
+  $prev.disabled = true;
   if ($panelNum === 7) {
     $panelNum = 1;
     text();
@@ -24,6 +26,8 @@ $next.addEventListener('click', () => {
 });
 
 $prev.addEventListener('click', () => {
+  $prev.disabled = true;
+  $next.disabled = true;
   if ($panelNum === 1) {
     $panelNum = 7;
     text();
@@ -75,6 +79,7 @@ function text() {
         $text2.textContent = 'Through time and sheer force of will. It grows.'
         $textDiv.appendChild($text2);
         $next.disabled = false;
+        $prev.disabled = false;
       }, 3000);
     }
 
@@ -91,6 +96,7 @@ function text() {
         $text2.textContent = 'Adapts'
         $textDiv.appendChild($text2);
         $next.disabled = false;
+        $prev.disabled = false;
       }, 3000);
     }
 
@@ -107,6 +113,7 @@ function text() {
         $text2.textContent = `It yearns for what it doesn't have. An innate drive to improve, to become better, stronger. Its ancestor's struggle has brought it here. To this moment.`
         $textDiv.appendChild($text2);
         $next.disabled = false;
+        $prev.disabled = false;
       }, 3000);
     }
 
@@ -123,6 +130,7 @@ function text() {
         $text2.textContent = 'Does it dare to dream?'
         $textDiv.appendChild($text2);
         $next.disabled = false;
+        $prev.disabled = false;
       }, 3000);
     }
 
@@ -133,6 +141,7 @@ function text() {
         $text1.textContent = 'Breaking forth from its watery prison, going further than any before it. Think of the nations and empires it has wrought with this act.';
         $textDiv.appendChild($text1);
         $next.disabled = false;
+        $prev.disabled = false;
       }, 2000);
     }
 
@@ -149,6 +158,7 @@ function text() {
         $img2.className = 'p6Img2';
         $textDiv.appendChild($img2);
         $next.disabled = false;
+        $prev.disabled = false;
       }, 2100);
     }
 
@@ -165,6 +175,7 @@ function text() {
         $text1.textContent = 'Not this time.';
         $textDiv.appendChild($text1);
         $next.disabled = false;
+        $prev.disabled = false;
       }, 2100);
     }
 
