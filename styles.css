@@ -80,6 +80,7 @@ a:hover {
 .panel {
   position: absolute;
   top: 15%;
+  left: 14%;
   width: 500px;
   border: 2px solid black;
 }
