@@ -1,45 +1,49 @@
 const $next = document.getElementById('next');
 const $prev = document.getElementById('prev');
-const $panel = document.getElementById('panel');
 const $textDiv = document.getElementById('textDiv');
+const $panelDiv = document.getElementById('panelDiv');
+// const $navRow = document.getElementById('navRow');
+// const $panel = document.getElementById('panel');
 
 let $panelNum = 1;
 
 window.addEventListener("load", () => {
-  changePanel();
   text();
+  changePanel();
 });
 
 $next.addEventListener('click', () => {
   if ($panelNum === 7) {
     $panelNum = 1;
-    changePanel();
     text();
+    changePanel();
   } else if (($panelNum >= 1) && ($panelNum < 7)) {
     $panelNum++;
-    changePanel();
     text();
+    changePanel();
   }
 });
 
 $prev.addEventListener('click', () => {
   if ($panelNum === 1) {
     $panelNum = 7;
-    changePanel();
     text();
+    changePanel();
   } else if (($panelNum <= 7) && ($panelNum > 1)) {
     $panelNum--;
-    changePanel();
     text();
+    changePanel();
   }
 });
 
 function changePanel() {
-  // $panel.className = " ";
+  $panelDiv.innerHTML = '';
 
   if ($panelNum === 6) {
+    const $panel = document.createElement('img');
     $panel.className = "panel fade-in"
     $panel.setAttribute('src', `images/skullo/${$panelNum}.png`);
+    $panelDiv.appendChild($panel);
 
     setTimeout(() => {
       $panel.className = "panel flicker"
@@ -48,8 +52,10 @@ function changePanel() {
     );
 
   } else {
+    const $panel = document.createElement('img');
     $panel.className = "panel fade-in"
     $panel.setAttribute('src', `images/skullo/${$panelNum}.png`);
+    $panelDiv.appendChild($panel);
   }
 
 }
