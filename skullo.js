@@ -2,17 +2,16 @@ const $next = document.getElementById('next');
 const $prev = document.getElementById('prev');
 const $textDiv = document.getElementById('textDiv');
 const $panelDiv = document.getElementById('panelDiv');
-// const $navRow = document.getElementById('navRow');
-// const $panel = document.getElementById('panel');
-
 let $panelNum = 1;
 
 window.addEventListener("load", () => {
   text();
   changePanel();
+  $next.disabled = true;
 });
 
 $next.addEventListener('click', () => {
+  $next.disabled = true;
   if ($panelNum === 7) {
     $panelNum = 1;
     text();
@@ -75,6 +74,7 @@ function text() {
         $text2.className = 'p1Text2 focus-in';
         $text2.textContent = 'Through time and sheer force of will. It grows.'
         $textDiv.appendChild($text2);
+        $next.disabled = false;
       }, 3000);
     }
 
@@ -90,6 +90,7 @@ function text() {
         $text2.className = 'p2Text2 focus-in';
         $text2.textContent = 'Adapts'
         $textDiv.appendChild($text2);
+        $next.disabled = false;
       }, 3000);
     }
 
@@ -105,7 +106,7 @@ function text() {
         $text2.className = 'p3Text2 fade-in';
         $text2.textContent = `It yearns for what it doesn't have. An innate drive to improve, to become better, stronger. Its ancestor's struggle has brought it here. To this moment.`
         $textDiv.appendChild($text2);
-
+        $next.disabled = false;
       }, 3000);
     }
 
@@ -121,6 +122,7 @@ function text() {
         $text2.className = 'p4Text2 fade-in';
         $text2.textContent = 'Does it dare to dream?'
         $textDiv.appendChild($text2);
+        $next.disabled = false;
       }, 3000);
     }
 
@@ -130,6 +132,7 @@ function text() {
         $text1.className = 'p5Text1 fade-in';
         $text1.textContent = 'Breaking forth from its watery prison, going further than any before it. Think of the nations and empires it has wrought with this act.';
         $textDiv.appendChild($text1);
+        $next.disabled = false;
       }, 2000);
     }
 
@@ -145,6 +148,7 @@ function text() {
         $img2.setAttribute('src', 'images/text/text6-bam.png');
         $img2.className = 'p6Img2';
         $textDiv.appendChild($img2);
+        $next.disabled = false;
       }, 2100);
     }
 
@@ -160,6 +164,8 @@ function text() {
         $text1.className = 'p7Text1 fade-in';
         $text1.textContent = 'Not this time.';
         $textDiv.appendChild($text1);
+        $next.disabled = false;
       }, 2100);
     }
+
 }
