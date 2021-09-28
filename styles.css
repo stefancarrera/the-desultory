@@ -25,12 +25,12 @@ a {
   text-align: center;
   padding: 5px 5px;
   text-decoration: none;
-  color: white;
+  color: black;
 }
 
 a:hover {
   background-color: rgb(235, 235, 211);
-  color: lightblue;
+  color: gray;
 }
 
 .navRow {
@@ -51,6 +51,7 @@ a:hover {
   background-repeat: no-repeat;
   overflow: hidden;
   transition-duration: 1s;
+  color: white;
   background-image: URL(http://www.fillmurray.com/g/700/700);
 }
 
@@ -88,9 +89,11 @@ a:hover {
 .c:hover,
 .d:hover,
 .e:hover {
+  color: lightgreen;
   width: 50%;
-  z-index: 1;
+  transform: rotateX(30deg);
 }
+
 
 .container {
   display: flex;
