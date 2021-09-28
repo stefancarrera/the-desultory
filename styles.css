@@ -30,8 +30,70 @@ a {
 
 a:hover {
   background-color: rgb(235, 235, 211);
-  color: green;
+  color: gray;
 }
+
+.navRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1250px;
+  margin-top: 1rem;
+}
+
+.a,
+.b,
+.c,
+.d,
+.e {
+  width: calc(100 / 5);
+  height: 500px;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  transition-duration: 1s;
+  color: white;
+  background-image: URL(http://www.fillmurray.com/g/700/700);
+}
+
+.a {
+  margin-top: -10px;
+  margin-right: 5px;
+}
+
+.b {
+  margin-top: 25px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.c {
+  margin-top: 45px;
+  margin-right: 5px;
+  margin-left: 5px;
+}
+
+.d {
+  margin-top: 25px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.e {
+  margin-top: -10px;
+  margin-left: 5px;
+}
+
+
+.a:hover,
+.b:hover,
+.c:hover,
+.d:hover,
+.e:hover {
+  color: lightgreen;
+  width: 50%;
+  transform: rotateX(30deg);
+}
+
 
 .container {
   display: flex;
@@ -85,13 +147,6 @@ a:hover {
   border: 2px solid black;
 }
 
-.navRow {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 1000px;
-  margin-top: 1rem;
-}
 
 .frontPageNav {
   margin-top: 4rem;
