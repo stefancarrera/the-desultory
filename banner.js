@@ -9,4 +9,7 @@ window.addEventListener('load', () => {
     $titleText.textContent = "The Desultory";
     $titleText.className = "title tracking-in";
   }, 6000);
+  setTimeout(() => {
+    $titleText.className = "hidden";
+  }, 7000)
 });
