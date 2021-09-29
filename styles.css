@@ -1,3 +1,7 @@
+.hidden {
+  display: none !important;
+}
+
 body {
   background-color: rgb(46, 47, 48);
   font-family: 'Barlow Condensed', sans-serif;
@@ -41,6 +45,13 @@ a:hover {
   margin-top: 1rem;
 }
 
+.newBanner {
+  background-image: URL(./images/Friends_In_Vice.png);
+  background-attachment: fixed;
+  background-position: center 9%;
+  background-size: auto 625px;
+}
+
 .a,
 .b,
 .c,
@@ -48,11 +59,9 @@ a:hover {
 .e {
   width: calc(100 / 5);
   height: 500px;
-  background-repeat: no-repeat;
-  overflow: hidden;
   transition-duration: 1s;
   color: white;
-  background-image: URL(http://www.fillmurray.com/g/700/700);
+
 }
 
 .a {
@@ -90,8 +99,8 @@ a:hover {
 .d:hover,
 .e:hover {
   color: lightgreen;
-  width: 50%;
-  transform: rotateX(30deg);
+  width: 25%;
+  height: 550px;
 }
 
 
@@ -101,6 +110,7 @@ a:hover {
   align-items: center;
   justify-content: center;
   margin: auto;
+  width: 1000px;
 }
 
 .banner {
@@ -118,11 +128,19 @@ a:hover {
 .title {
   position: absolute;
   top: 10%;
-  left: 37%;
+  left: 43%;
   font-family: 'Permanent Marker', cursive;
   font-size: 60px;
   color: white;
   width: 250px;
+  text-align: center;
+  z-index: 1;
+}
+
+.desultory {
+  font-family: 'Permanent Marker', cursive;
+  font-size: 60px;
+  color: white;
   text-align: center;
 }
 
