@@ -1,4 +1,5 @@
 const $titleText = document.getElementById('title');
+const $btmText = document.getElementById('btmText');
 
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -11,5 +12,7 @@ window.addEventListener('load', () => {
   }, 6000);
   setTimeout(() => {
     $titleText.className = "hidden";
+    $btmText.className = "desultory";
+    $btmText.textContent = "The Desultory";
   }, 7000)
 });
