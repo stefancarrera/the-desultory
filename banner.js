@@ -14,5 +14,5 @@ window.addEventListener('load', () => {
     $titleText.className = "hidden";
     $btmText.className = "desultory";
     $btmText.textContent = "The Desultory";
-  }, 7000)
+  }, 7500)
 });
