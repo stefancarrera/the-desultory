@@ -98,7 +98,7 @@ a:hover {
 .c:hover,
 .d:hover,
 .e:hover {
-  color: lightgreen;
+  color: rgb(214, 140, 155);
   width: 25%;
   height: 550px;
 }
