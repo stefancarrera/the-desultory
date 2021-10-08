@@ -1,5 +1,8 @@
 const $titleText = document.getElementById('title');
 const $btmText = document.getElementById('btmText');
+const $homeBtn = document.getElementById('homeBtn');
+const $skullo = document.getElementById('skullo');
+const $vn = document.getElementById('vn');
 
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -14,5 +17,8 @@ window.addEventListener('load', () => {
     $titleText.className = "hidden";
     $btmText.className = "desultory";
     $btmText.textContent = "The Desultory";
-  }, 7500)
+    $homeBtn.textContent = "Home";
+    $skullo.textContent = "Skullo Kills Humanity";
+    $vn.textContent = "A Visual Novel";
+  }, 7300)
 });
