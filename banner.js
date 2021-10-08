@@ -1,6 +1,7 @@
 const $titleText = document.getElementById('title');
 const $btmText = document.getElementById('btmText');
 const $homeBtn = document.getElementById('homeBtn');
+const $skullo = document.getElementById('skullo');
 
 window.addEventListener('load', () => {
   setTimeout(() => {
@@ -16,5 +17,6 @@ window.addEventListener('load', () => {
     $btmText.className = "desultory";
     $btmText.textContent = "The Desultory";
     $homeBtn.textContent = "Home";
+    $skullo.textContent = "Skullo Kills Humanity";
   }, 7300)
 });
