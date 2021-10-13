@@ -20,6 +20,7 @@ function vnPic() {
 
 function vnTools() {
   const $vnToolBar = document.createElement('div');
+  $vnToolBar.className = 'vnToolBar';
   $vnPanel.appendChild($vnToolBar);
 
   const $vnOptOne = document.createElement('button');
@@ -28,6 +29,6 @@ function vnTools() {
   const $vnOptTwo = document.createElement('button');
   $vnOptTwo.textContent = 'Option Two';
 
-  $vnPanel.appendChild($vnOptOne);
-  $vnPanel.appendChild($vnOptTwo);
+  $vnToolBar.appendChild($vnOptOne);
+  $vnToolBar.appendChild($vnOptTwo);
 }
