@@ -1,0 +1,15 @@
+button {
+  width: auto;
+  height: auto;
+}
+
+.vnContainer {
+  margin-top: 3rem;
+}
+
+.vnToolBar {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

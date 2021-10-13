@@ -113,13 +113,6 @@ a:hover {
   width: 1000px;
 }
 
-.banner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: auto;
-}
 
 .posRel {
   position: relative;
@@ -163,11 +156,6 @@ a:hover {
   left: 14%;
   width: 500px;
   border: 2px solid black;
-}
-
-
-.frontPageNav {
-  margin-top: 4rem;
 }
 
 .nextBtnPos {
